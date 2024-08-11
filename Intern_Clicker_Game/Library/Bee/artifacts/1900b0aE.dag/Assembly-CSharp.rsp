@@ -380,6 +380,7 @@
 "Assets/Scripts/EnemyInfo.cs"
 "Assets/Scripts/EnemyMove.cs"
 "Assets/Scripts/PlayerAttack.cs"
+"Assets/Scripts/SpawnManager.cs"
 -langversion:9.0
 /deterministic
 /optimize+

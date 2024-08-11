@@ -19,7 +19,7 @@ public class PlayerAttack : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //pos = transform.position + new Vector3(1f, 5f, 0);
+        pos = transform.position + pos;
         Animator = gameObject.GetComponentInParent<Animator>();
     }
 
@@ -65,37 +65,4 @@ public class PlayerAttack : MonoBehaviour
         isAttack = false;
     }
 
-    //private void OnTriggerEnter2D(Collider2D collision)
-    //{
-    //    if (collision.tag == "Enemy")
-    //    {
-    //        //Collider2D[] collider2Ds = Physics2D.OverlapBoxAll();
-    //        Debug.Log("적 감지 공격");
-    //        Animator.SetTrigger("IEN");
-    //        enemyInfo = collision.GetComponent<EnemyInfo>();
-    //        StartCoroutine(enemyInfo.TakeDamageWithCoroutine(100, 1f));
-    //    }
-    //}
-
-    //private void OnTriggerStay2D(Collider2D collision)
-    //{
-    //    GameObject enemy = GameObject.FindGameObjectWithTag("Enemy");
-    //    if(collision.tag == "Enemy" && enemy != null)
-    //    {
-    //        enemyInfo = collision.GetComponent<EnemyInfo>();
-    //        if (enemyInfo.CurrentHp > 0) 
-    //        {
-    //            Debug.Log("다시 공격");
-    //            Animator.SetTrigger("IEN");
-    //            enemyInfo = collision.GetComponent<EnemyInfo>();
-    //            StartCoroutine(enemyInfo.TakeDamageWithCoroutine(100, 1f));
-    //        }
-    //        if (enemyInfo.CurrentHp <= 0)
-    //        {
-    //            enemyInfo.EnemyDead();
-    //            Debug.Log("코루틴 정지");
-    //            StopAllCoroutines();
-    //        }
-    //    }
-    //}
 }
