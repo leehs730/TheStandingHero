@@ -48,7 +48,7 @@ public class PlayerAttack : MonoBehaviour
     {
         if (!isAttack) 
         {
-            Debug.Log("적 공격 시작");
+            //Debug.Log("적 공격 시작");
             Animator.SetTrigger("IEN");
             enemy = GameObject.FindGameObjectWithTag("Enemy");
             EnemyInfo enemyInfo = enemy.GetComponent<EnemyInfo>();
